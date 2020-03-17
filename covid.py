@@ -68,6 +68,7 @@ def graph(data, countries=['US'], dayzerothreshold=100, ylabel='cases'):
 
 
 def prettylogo():
+  print()
   print(" .d8888b.   .d88888b.  888     888 8888888 8888888b.        d888   .d8888b. ") 
   print("d88P  Y88b d88P\" \"Y88b 888     888   888   888  \"Y88b      d8888  d88P  Y88b") 
   print("888    888 888     888 888     888   888   888    888        888  888    888") 
