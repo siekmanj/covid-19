@@ -104,7 +104,18 @@ if __name__ == '__main__':
   data = load_data(data_file)
 
   while True:
-    threshold = int(input("Enter a minimum incidence threshold for day 0 (some integer greater than zero): "))
+    validint = False
+    try:
+      threshold = int(input("Enter a minimum incidence threshold for day 0 (some integer greater than zero): "))
+      validint = True
+    except ValueError:
+      while not validint:
+        try:
+          threshold = int(input("Enter an integer greater than zero (like 150): "))
+          validint = True
+        except ValueError:
+          pass
+
 
     print()
     print(list(data.keys()))
